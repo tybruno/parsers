@@ -5,6 +5,6 @@ Library of parsers to be extended or used in other applications and libraries.
 * **Great Developer Experience**: Being fully typed makes it great for editor support.
 * **There is More!!!**:
     * [hosts_parser](https://github.com/tybruno/hosts_parser): Parse a string of host into an iteratable. 
-    * [commands_parser](https://github.com/tybruno/commmands_parser): Parse a string of commands into an iteratable.
+    * [commands_parser](https://github.com/tybruno/commands_parser): Parse a string of commands into an iteratable.
 ## Installation
 `pip install "git+https://github.com/tybruno/parsers.git#egg=parsers`
