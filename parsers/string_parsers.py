@@ -1,5 +1,6 @@
 from typing import Generator
 from dataclasses import dataclass, field
+from abc import ABC, abstractmethod
 
 
 @dataclass
@@ -20,8 +21,14 @@ class Splitter:
                 yield item
 
 
+class AbstractStringParser(ABC):
+    @abstractmethod
+    def __call__(self, string: str) -> Generator:
+        ...
+
+
 @dataclass
-class BasicStringInputParser:
+class BasicStringInputParser(AbstractStringParser):
     def __call__(self, string: str) -> Generator:
         split_newlines = Splitter(seperator="\n")
         split_commas = Splitter(seperator=",")
