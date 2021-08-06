@@ -1,6 +1,12 @@
+from abc import (
+    ABC,
+    abstractmethod,
+)
+from dataclasses import (
+    dataclass,
+    field,
+)
 from typing import Generator
-from dataclasses import dataclass, field
-from abc import ABC, abstractmethod
 
 
 @dataclass
